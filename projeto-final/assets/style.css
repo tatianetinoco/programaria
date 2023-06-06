@@ -314,15 +314,35 @@ footer{
 }
 
 .footer-content{
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 15px;
-  color: #dadada;
-  padding: 5px;
+  color: #cccccc;
+  padding: 10px;
   text-align: center;
 }
 
-.footer-content p{
-  margin-top: 30px;
+.footer_bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.footer_bottom div li{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 10px;
+ }
+
+.footer_bottom div li a img{
+  height: 25px;
+  transition: all 0.2s;
+}
+
+.footer_bottom div li a img:hover{
+  scale: 1.2;
 }
 
 .redes-sociais ul{
